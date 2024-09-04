@@ -10,10 +10,10 @@ int main() {
     // int adj[node+1][node+1] = {0};  // Initialize matrix with 0
 
     // for(int i = 0; i < edge; i++) {
-    //     int u, v;
-    //     cin >> u >> v;
-    //     adj[u][v] = 1;
-    //     adj[v][u] = 1;
+    //     int u, v ,weight;
+    //     cin >> u >> v >> weight;
+    //     adj[u][v] = weight;
+       
     // }
 
     // // Optional: To print the adjacency matrix
@@ -25,22 +25,20 @@ int main() {
     // }
 
 // using vector
-    vector<int> adj[node+1];
-    for(int i = 0; i < edge; i++) {
-        int u, v;
-        cin >> u >> v;
-        adj[u].push_back(v);
-        adj[v].push_back(u);
-    }
+    // vector<pair<int,int>> adj[node+1];
+    // for(int i = 0; i < edge; i++) {
+    //     int u, v , weight;
+    //     cin >> u >> v >> weight; //
+    //     adj[u].push_back({v,weight});
+    // }
 
-    // Optional: To print the adjacency list
-    for(int i = 1; i <= node; i++) {
-        cout << i << " -> ";
-        for(int j = 0; j < adj[i].size(); j++) {
-            cout << adj[i][j] << " ";
-        }
-        cout << endl;
-    }
+    //  for(int i = 1; i <= node; i++) {
+    //     cout << i << " -> ";
+    //     for(auto edge : adj[i]) {
+    //         cout << "(" << edge.first << ", " << edge.second << ") ";
+    //     }
+    //     cout << endl;
+    // }
     
     return 0;
 }
